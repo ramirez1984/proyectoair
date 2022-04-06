@@ -8,9 +8,11 @@
         display: grid;
         grid-template-columns: repeat(4, 30rem);
         column-gap: 4rem;
+        
         @include m.scrollHorizontal;
         @include m.tablet { 
             @include m.grid(2, 2rem);
+            overflow: hidden;
             
          }
          @include m.desktop {
@@ -28,7 +30,7 @@
     }
     
     &__nombre {
-        margin: 0;
+        margin: 2rem;
         font-size: 1.8rem;
         font-weight: bold;
     }
